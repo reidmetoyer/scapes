@@ -1,0 +1,51 @@
+.page-title {
+    text-align: center;
+    margin: 24px 0 18px;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+}
+
+#masonry {
+
+    max-width: 750px;
+    margin: 120px auto 0;
+    display: flex;
+    gap: 56px;
+    align-items: flex-start;
+}
+
+.col-wrap {
+    flex: 1;
+}
+
+
+.col-wrap:first-child { flex: 1.00; }
+.col-wrap:last-child  { flex: 0.95; }
+
+.col-wrap--offset {
+    margin-top: 0px;
+}
+
+.col-title {
+    margin: 0 0 35px;
+    font-size: 3rem;
+}
+.col img {
+
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 0 56px;
+
+}   
+
+@media (max-width: 700px) {
+    #masonry { 
+        max-width: 92vw;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .col-wrap--offset { margin-top: 0; }
+}
